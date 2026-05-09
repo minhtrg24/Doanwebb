@@ -87,7 +87,7 @@ function removeItem(index) {
 // function addToCart(btn) {
 //     let productName, productPrice, productImage;
 
-//     // Nếu bấm ở trang chủ (có truyền 'this')
+
 //     if (btn) {
 //         const productCard = btn.closest('.product-card');
 //         productName = productCard.querySelector('h3').innerText;
@@ -95,7 +95,7 @@ function removeItem(index) {
 //         productPrice = parseInt(priceText.replace(/\D/g, ''));
 //         productImage = productCard.querySelector('img').src;
 //     } 
-//     // Nếu bấm ở trang chi tiết (không truyền 'this')
+
 //     else {
 //         productName = document.querySelector('h1').innerText;
 //         const priceText = document.querySelector('.current-price').innerText;
@@ -121,7 +121,7 @@ function removeItem(index) {
 
 //     localStorage.setItem('cart', JSON.stringify(cart));
     
-//     // Cập nhật Badge trên Header ngay lập tức
+
 //     const badge = document.getElementById('cart-count') || document.querySelector('.badge');
 //     if (badge) badge.innerText = cart.length;
 //     updateCartBadge();
@@ -203,13 +203,13 @@ function updateQuantity(index, change) {
 }
 
 // function updateCartBadge() {
-//     // Lấy giỏ hàng từ localStorage
+
 //     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     
-//     // Tính tổng số lượng (hoặc dùng cart.length nếu bạn muốn đếm số loại mặt hàng)
+
 //     let totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
 
-//     // Tìm phần tử hiển thị con số (ID hoặc Class của bạn)
+
 //     const badge = document.getElementById('cart-count') || document.querySelector('.badge');
     
 //     if (badge) {
