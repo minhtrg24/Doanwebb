@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop HP 14-em0086AU R5 7520U - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/Hp.webp" alt="Laptop HP 14-em0086AU R5 7520U">
+                </div>
+
+                <div class="product-info">
+                    <h1>Laptop HP 14-em0086AU R5 7520U</h1>
+                    <div class="price-group">
+                        <span class="current-price">16.390.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                       <div class="spec-item">
+                            <span class="spec-label">CPU</span>
+                            <span>AMD Ryzen 5 7520U (4 nhân, 8 luồng)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">RAM</span>
+                            <span>16GB DDR4-3200 MT/s Onboard</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">SSD</span>
+                            <span>512 GB PCIe NVMe M.2 SSD</span>
+                        </div>                    
+                        <div class="spec-item">
+                            <span class="spec-label">VGA</span>
+                            <span>AMD Radeon 610M Graphics</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Màn hình</span>
+                            <span>14" FHD (1920x1080), 250 nits, Anti-glare</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cổng giao tiếp</span>
+                            <span>USB-C, 2x USB-A, HDMI 1.4b</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Pin</span>
+                            <span>3-cell, 41 Wh Li-ion polymer</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hệ điều hành</span>
+                            <span>Windows 11 Home Single Language</span>
+                        </div>
+                    </div>
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart"onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-shield-alt" style="color: #cb1c22;"></i> Bảo hành chính hãng 2 năm
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                <h2>Đặc điểm nổi bật</h2>
+                <p>Laptop HP 14-em0023AU D0BG7PA phục vụ tốt nhu cầu công việc, học tập nhờ sở hữu phiên bản chip AMD Ryzen 5 7520U, 16GB DDR4 on-board và ổ SSD 512GB. Với viên pin 3-cell 41Wh, thiết bị mang đến khả năng hoạt động bền bỉ cả ngày. Màn hình 14 inch FHD của sản phẩm cũng được tối ưu để có tỷ lệ hiển thị lên tới 84.01%.</p>
+                <h3>Xử lý nhanh, khởi động tức thì</h3>
+                <p>Với 16GB RAM DDR4-3200MT/s on-board, laptop HP 14-em0023AU D0BG7PA mang lại khả năng xử lý tốc độ cao và ổn định. Với dung lượng RAM lớn, máy có thể thực hiện đa nhiệm mượt mà trong thời gian dài mà không cần người dùng nâng cấp.</p>
+                <p>Bộ nhớ trong 512GB PCIe NVMe M.2 SSD của thiết bị cung cấp cho người dùng không gian đủ lớn để lưu trữ dữ liệu cũng như cài đặt phần mềm. Việc sử dụng ổ cứng SSD cũng đồng thời giúp sản phẩm truy xuất dữ liệu và khởi động các chương trình nhanh hơn.</p>
+                <h3>Màn hình sống động, tối ưu không gian hiển thị</h3>
+                <p>Laptop HP 14-em0023AU D0BG7PA được trang bị màn hình 14 inch để phù hợp với thiết kế nhỏ gọn, linh hoạt. Với chất lượng hiển thị FHD (1920 x 1080), hình ảnh hiển thị trên màn hình 14 inch này giữ được độ rõ nét. </p>
+                <p>Với thiết kế micro-edge, tỷ lệ màn hình trên thân máy được tối ưu lên tới 84.01%. Nhờ đó, người dùng vẫn có được không gian làm việc, giải trí rộng rãi trên chiếc máy tính xách tay 14 inch này.</p>
+                <p>Ngoài ra, màn hình máy còn có khả năng giảm chói hiệu quả cùng độ sáng 250 nits, giúp hình ảnh vẫn hiển thị rõ nét trong nhiều điều kiện ánh sáng. Thông số độ phủ màu 45% NTSC của màn hình cũng được tối ưu để phù hợp với các nhu cầu làm việc văn phòng hay sử dụng cơ bản.</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

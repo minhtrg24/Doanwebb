@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple MacBook Air M2 2024- Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/macbook.webp" alt="Apple MacBook Air M2 2024">
+                </div>
+
+                <div class="product-info">
+                    <h1>Apple MacBook Air M2 2024</h1>
+                    <div class="price-group">
+                        <span class="current-price">17.490.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                       <div class="spec-item">
+                            <span class="spec-label">CPU</span>
+                            <span>Apple M2 (8 nhân CPU, 16 nhân Neural Engine)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">RAM</span>
+                            <span>8GB </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">SSD</span>
+                            <span>256GB</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">VGA</span>
+                            <span>8 nhân GPU</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Màn hình</span>
+                            <span>13.6" Liquid Retina (2560 x 1664), 500 nits</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cổng kết nối</span>
+                            <span>2 x Thunderbolt 3, MagSafe 3, Jack 3.5mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Pin</span>
+                            <span>52.6 Wh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hệ điều hành</span>
+                            <span>macOS</span>
+                        </div>
+                    </div>
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-shield-alt" style="color: #cb1c22;"></i> Bảo hành chính hãng 2 năm
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) -->
+            <div class="product-description">
+                <h2>Đặc điểm nổi bật</h2>
+                <p>Macbook Air M2 2024 với thiết kế sang trọng, vẻ ngoài siêu mỏng đầy lịch lãm. Mẫu Macbook Air mới với những nâng cấp về thiết kế và cấu hình cùng giá bán phải chăng, đây sẽ là một thiết bị lý tưởng cho công việc và giải trí.</p>
+                <h3>Thiết kế mỏng nhẹ, màn hình Liquid Retina 13.6 inch </h3>
+                <p>Macbook Air 13 được thiết kế mỏng nhẹ với trọng lượng 1.24 kg. Toàn bộ phần vỏ vẫn được giữ nguyên chất liệu nhôm cứng cáp, bền bỉ nên vẫn thể hiện được sự sang trọng và đẳng cấp. Bên cạnh đó, các cạnh bo tròn mềm mại cùng được vát mỏng mang đến một tổng thể tuyệt mỹ và vô cùng gọn gàng.</p>
+                <p>Trên Macbook Air M2 này, Apple sẽ trang bị cho máy màn hình Liquid Retina kích thước 13.6 inch, hỗ trợ đến 1 tỷ màu. Bên cạnh đó là độ sáng 500 nits, dải màu rộng P3 cùng công nghệ True Tone.</p>
+                <p>Nhờ vậy mà hình ảnh hiển thị sống động, rực rỡ, độ tương phản phong phú, chi tiết sắc nét hơn rất nhiều. Đây được đánh giá là màn hình lớn và sáng nhất so với các thế hệ Macbook Air trước đây.</p>
+                <h3>Dung lượng pin lớn, hệ thống tản nhiệt thông minh</h3>
+                <p>Nhờ được trang bị bộ vi xử lý mới vô cùng độc đáo giúp Macbook Air M2 tiết kiệm năng lượng một cách tối đa. Với trang bị viên pin lớn, bạn thoải mái lướt web, nghe nhạc, giải trí hoặc làm việc trong cả ngày dài mà không lo hết pin.</p>
+                <p>Bên cạnh đó, hệ thống tản nhiệt thông minh được trang bị trên máy giúp máy không bị nóng trong quá trình hoạt động. Đặc biệt, giúp cho hiệu suất luôn được duy trì và đảm bảo trong thời gian dài.</p>
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

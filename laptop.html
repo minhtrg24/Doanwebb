@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Tech - Danh sách Laptop</title>
+    <!-- Font Awesome để hiện Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./Style/menustyle.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            
+            <a href="dangnhap.html" class="icon-link" title="Đăng nhập" style="color: white;text-decoration: none;">
+                <i class="fas fa-user"></i>
+                <span class="icon-text"></span>
+            </a>
+            <a href="giohang.html" class="icon-link cart-icon" title="Giỏ hàng" style="color: white">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2 class="section-title">Laptop </h2>
+        
+<div class="product-grid">
+
+    <!-- Máy 1 -->
+    <div class="product-card">
+        <a href="Laptopasusvivobook.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/asusvivobook.png" alt="Laptop">
+            <p class="product-name">Laptop ASUS Vivobook 15 X1504VA-BQ165W</p>
+            <p class="product-price">18.490.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 2 -->
+    <div class="product-card">
+        <a href="Laptopmsi.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/msi.webp" alt="Laptop">
+            <p class="product-name">Laptop MSI Modern 14 F13MG-466VN V2</p>
+            <p class="product-price">15.190.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 3 -->
+    <div class="product-card">
+        <a href="Laptopacer.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/acernitro.webp" alt="Laptop">
+            <p class="product-name">Laptop Acer Nitro V 15 ANV15-41-R1JY</p>
+            <p class="product-price">22.290.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 4 -->
+    <div class="product-card">
+        <a href="Laptoploq.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/lenovo.jpg" alt="Laptop">
+            <p class="product-name">Laptop Gaming LENOVO LOQ</p>
+            <p class="product-price">26.990.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 5 -->
+    <div class="product-card">
+        <a href="Laptopdellvostro.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/dell.webp" alt="Laptop">
+            <p class="product-name">Laptop Dell Vostro</p>
+            <p class="product-price">19.990.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 6 -->
+    <div class="product-card">
+        <a href="LaptopHP.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/Hp.webp" alt="Laptop">
+            <p class="product-name">Laptop HP 14-em0086AU R5 7520U</p>
+            <p class="product-price">16.390.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 7 -->
+    <div class="product-card">
+        <a href="Laptopasustuf.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/TUF.webp" alt="Laptop">
+            <p class="product-name">Laptop Asus TUF Gaming</p>
+            <p class="product-price">17.490.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 8 -->
+    <div class="product-card">
+        <a href="Laptopmacbook.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/macbook.webp" alt="Laptop">
+            <p class="product-name">Apple MacBook Air M2 2024</p>
+            <p class="product-price">17.490.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+</div>
+    </div>
+<script src="giohang.js"></script>
+<script src="timkiem.js"></script>
+</body>
+</html>

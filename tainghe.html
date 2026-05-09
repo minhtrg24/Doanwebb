@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Tech - Danh sách Tai Nghe</title>
+    <!-- Font Awesome để hiện Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./Style/menustyle.css">
+</head>
+<body>
+
+    <header>
+         <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            
+            <a href="dangnhap.html" class="icon-link" title="Đăng nhập" style="color: white;text-decoration: none;">
+                <i class="fas fa-user"></i>
+                <span class="icon-text"></span>
+            </a>
+            <a href="giohang.html" class="icon-link cart-icon" title="Giỏ hàng" style="color: white">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2 class="section-title">Tai Nghe </h2>
+        
+        <div class="product-grid">
+
+    <!-- Máy 1 -->
+    <div class="product-card">
+        <a href="tainghehavit.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/tainghe.webp" alt="TaiNghe">
+            <p class="product-name">Tai nghe Havit H2002D High Definition Gaming</p>
+            <p class="product-price">950.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 2 -->
+    <div class="product-card">
+        <a href="taingheawl500.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/tainghealpha.png" alt="TaiNghe">
+            <p class="product-name">Tai nghe Bluetooth chụp tai Alpha Works Lite 500</p>
+            <p class="product-price">450.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 3 -->
+    <div class="product-card">
+        <a href="tainghexiaomi.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/tainghexiaomi.webp" alt="TaiNghe">
+            <p class="product-name">Tai nghe Bluetooth Xiaomi Redmi Buds 8 Active</p>
+            <p class="product-price">700.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 4 -->
+    <div class="product-card">
+        <a href="taingh2wireless.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/tainghe2wireless.webp" alt="TaiNghe">
+            <p class="product-name">Tai nghe Bluetooth True Wireless Beats Solo Buds</p>
+            <p class="product-price">3.290.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 5 -->
+    <div class="product-card">
+        <a href="tainghekz.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/tainghekz.webp" alt="TaiNghe">
+            <p class="product-name">Tai nghe KZ EDX Pro</p>
+            <p class="product-price">260.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Máy 6 -->
+    <div class="product-card">
+        <a href="tainghedaybasus.html" style="text-decoration: none; color: inherit; display: block;">
+            <img src="image/tainghebasus.webp" alt="TaiNghe">
+            <p class="product-name">Tai nghe có dây Baseus Encok CZ11</p>
+            <p class="product-price">90.000đ</p>
+        </a>
+
+        <button class="btn-add" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+</div>
+    </div>
+<script src="giohang.js"></script>
+<script src="timkiem.js"></script>
+</body>
+</html>

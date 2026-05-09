@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn phím AULA F75 - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/bpaulaf75.png" alt="Bàn phím AULA F75">
+                </div>
+
+                <div class="product-info">
+                    <h1>Bàn phím AULA F75</h1>
+                    <div class="price-group">
+                        <span class="current-price">1.189.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Loại bàn phím</span>
+                            <span>Tenkeyless 75% (80 phím)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Phím đặc biệt</span>
+                            <span>Phím tăng giảm âm lượng/độ sáng của đèn</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tương thích</span>
+                            <span>WINXP/7/8/10, Android/IOS/MAC</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kết nối</span>
+                            <span>Có dây Type-C, Không dây 2.4G, Bluetooth</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Khoảng cách kết nối</span>
+                            <span>Độ dài dây: 1.6m</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Đèn LED</span>
+                            <span>RGB 16.8 triệu màu </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Thời gian dùng</span>
+                            <span>30.5 giờ (mở LED) - 80 giờ (tắt LED)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hãng sản xuất</span>
+                            <span>Aula</span>
+                        </div>
+                    </div>    
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-check-circle"></i>  Bảo hành chính hãng toàn quốc. <br>
+                        <i class="fas fa-check-circle"></i> Hỗ trợ trả góp lãi suất 0%. <br>
+                        <i class="fas fa-check-circle"></i>  Hỗ trợ giao hàng toàn quốc <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                
+                  <h3>Đặc điểm nổi bật</h3>
+                  <p>Bàn phím không dây Aula F75 Sea Blue là lựa chọn nổi bật trong phân khúc bàn phím cơ tầm trung, sở hữu layout Tenkeyless 80 phím nhỏ gọn tối ưu không gian. Sản phẩm tích hợp cấu trúc Gasket Mount tân tiến mang lại cảm giác gõ độc đáo và êm ái. Hơn nữa, khả năng kết nối đa dạng qua Bluetooth, 2.4GHz và dây USB-C còn đáp ứng linh hoạt nhu cầu sử dụng.</p>
+                  <br>
+                  <h3>Keycap bền bỉ, Switch êm mượt</h3>
+                  <p>Bàn phím không dây Aula F75 Sea Blue được trang bị bộ keycap làm từ chất liệu nhựa PBT cao cấp, nổi tiếng với độ bền vượt trội so với ABS thông thường. Với công nghệ in ký tự Double-Shot , bàn phím đảm bảo ký tự không bao giờ bị phai mờ theo thời gian sử dụng. Đồng thời bề mặt keycap có kết cấu hơi nhám, chống bám vân tay và chống bóng hiệu quả.</p>
+                  <br>
+                  <p>Trải nghiệm gõ phím trên Aula F75 được đảm bảo mượt mà và yên tĩnh nhờ vào việc sử dụng switch Grey Wood V3. Đây là loại switch Linear có hành trình trơn tru, không có khấc phản hồi, lực nhấn vừa phải, phù hợp cho cả việc gõ văn bản và chơi game. Đặc biệt, các switch này thường được nhà sản xuất Aula bôi trơn sẵn, giúp giảm thiểu tiếng ồn không mong muốn.</p>
+                        
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

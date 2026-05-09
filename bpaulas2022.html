@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn phím cơ Aula S2022 Blue Switch - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/bpaura.webp" alt="Bàn phím cơ Aula S2022 Blue Switch">
+                </div>
+
+                <div class="product-info">
+                    <h1>Bàn phím cơ Aula S2022 Blue Switch</h1>
+                    <div class="price-group">
+                        <span class="current-price">449.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                       <div class="spec-item">
+                            <span class="spec-label">Loại bàn phím</span>
+                            <span>Full-size (104 phím)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tương thích</span>
+                            <span>Windows 2000/ XP/7/8/10</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kết nối</span>
+                            <span>Dây USB 2.0</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Chiều dài dây</span>
+                            <span>1.6 m</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Đèn LED</span>
+                            <span>LED Rainbow 7 màu </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hãng sản xuất</span>
+                            <span>Aula</span>
+                        </div>
+                    </div>    
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-check-circle"></i>  Bảo hành chính hãng toàn quốc. <br>
+                        <i class="fas fa-check-circle"></i> Hỗ trợ trả góp lãi suất 0%. <br>
+                        <i class="fas fa-check-circle"></i>  Hỗ trợ giao hàng toàn quốc <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                
+                    <h3>Đặc điểm nổi bật</h3>
+                  <p>Bàn phím cơ AULA S2022 Blue Switch là một sản phẩm bàn phím AULA đáng tin cậy với độ bền vượt trội, tuổi thọ phím lên đến 60 triệu lần bấm. Sản phẩm kết nối thông qua dây cắm USB 2.0, mang lại sự ổn định và mượt mà. Hiệu ứng đèn nền LED Rainbow với nhiều chế độ tùy chỉnh khác nhau tạo ra không gian chơi game sôi động và thú vị. Sử dụng blue switch, bàn phím có âm thanh clicky đúng chuẩn và cảm giác gõ phím rõ ràng.</p>
+                  <br>
+                  <h3>Kết nối có dây tiện lợi, không sợ hết pin</h3>
+                  <p>Bàn phím cơ AULA S2022 Blue Switch được kết nối thông qua dây cắm USB 2.0. Kết nối USB cung cấp đường truyền tín hiệu tin cậy và nhanh chóng, giúp truyền dữ liệu một cách hiệu quả.</p>
+                  <br>
+                  <p>Với tốc độ truyền dữ liệu cao, bạn có thể trải nghiệm gõ phím mượt mà và không gặp độ trễ. Đơn giản chỉ cần cắm dây USB vào cổng USB trên máy tính và bàn phím sẽ được kết nối tức thì.</p>
+                        
+            </div>
+        </div>
+    </div>
+<script src="giohangchotrang.js"></script>
+</body>
+</html>

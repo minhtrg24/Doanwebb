@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asus TUF Gaming - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/TUF.webp" alt="Asus TUF Gaming">
+                </div>
+
+                <div class="product-info">
+                    <h1>Laptop Asus TUF Gaming F15 FX506HF</h1>
+                    <div class="price-group">
+                        <span class="current-price">17.490.000₫</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item"><span class="spec-label">CPU</span><span>Intel Core i5 11400H</span></div>
+                        <div class="spec-item"><span class="spec-label">RAM</span><span>8GB DDR4 3200MHz</span></div>
+                        <div class="spec-item"><span class="spec-label">SSD</span><span>512GB NVMe Gen3</span></div>
+                        <div class="spec-item"><span class="spec-label">VGA</span><span>RTX 2050 4GB</span></div>
+                        <div class="spec-item"><span class="spec-label">Màn hình</span><span>15.6" FHD 144Hz</span></div>
+                    </div>
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-shield-alt" style="color: #cb1c22;"></i> Bảo hành chính hãng 2 năm
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) -->
+            <div class="product-description">
+                <h2>Đặc điểm nổi bật</h2>
+                <p>Laptop ASUS TUF Gaming F15 là sản phẩm được thiết kế với những ưu điểm nổi bật về hiệu năng vô cùng mạnh mẽ và ấn tượng. Bên cạnh đó, laptop sở hữu vẻ ngoài vô cùng nhỏ gọn và tinh tế giúp cho các game thủ thuận tiện hơn trong việc di chuyển. Chắc chắn rằng đây sẽ là sản phẩm laptop Asus Tuf Gaming giúp bạn trải nghiệm các tựa game đồ hoạ được độc đáo và hấp dẫn theo cách riêng của mình.</p>
+                <h3>Thiết kế TUF F15 mạnh mẽ ấn tượng, bứt phá mọi giới hạn</h3>
+                <p>Laptop ASUS TUF Gaming F15 FX506HF HN014W giúp người dùng có được ấn tượng bởi hiệu năng vô cùng mạnh mẽ. Có được điều này là nhờ trang bị bộ vi xử lý Intel® Core™ i5 cùng với nhân đồ hoạ thế hệ mới NVIDIA.Bên cạnh đó, máy Asus Tuf Gaming F15 còn sở hữu dung lượng RAM và ổ cứng cao cấp, dung lượng lớn. Với những trang bị này giúp máy có thể hoạt động mượt mà, mọi tác vụ đa nhiệm đều được đáp ứng một cách tối ưu. Hơn thế, máy còn có bộ nhớ đồ hoạ riêng giúp mọi nhu cầu chơi game giải trí hay những ứng dụng đồ họa chuyên nghiệp đều được xử lý tốt, ấn tượng.</p>
+                <h3>Tản nhiệt TUF F15 cho hiệu suất chơi game cực mát</h3>
+                <p>Laptop ASUS TUF GAMING F15 FX506HF-HN014W đặt trong hệ thống tản nhiệt, đảm bảo trải nghiệm chơi game ổn định. Với bốn ống dẫn nhiệt, hệ thống này hoạt động một cách nhanh chóng và hiệu quả để đưa khí nóng ra khỏi các linh kiện bên trong laptop. Với sự quan tâm đặc biệt đến hệ thống tản nhiệt, chiếc ASUS TUF GAMING F15 sẽ đồng hành cùng bạn trong mọi trận chiến game mà không lo lắng về hiệu suất hoặc quá nhiệt.</p>
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

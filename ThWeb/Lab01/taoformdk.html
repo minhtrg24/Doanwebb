@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- shift+! -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDK</title>
+</head>
+<body>
+    <form action="phpp.php" enctype="multipart/form-data" method="get">
+        <table width="100%" border="1">
+            <tr>
+                <td>&nbsp;</td>
+                <!-- kí hiệu khoảng trắng -->
+                <td>Đăng Kí Thành viên</td>
+            </tr>
+            <tr>
+                <td>Tên Đăng Nhập</td>
+                <td>
+                    <input type="text" name="nmtext" id=""> 
+                </td>
+            </tr>
+            <tr>
+                <td>Mật Khẩu</td>
+                <td> 
+                    <input type="pasword" name="ps1" id="">  
+                </td>
+            </tr>
+            <tr>
+                <td>Nhập lại Mk</td>
+                <td>
+                      <input type="pasword" name="ps2" id=""> 
+                </td>
+            </tr>
+            <tr>
+                <td>Nơi Sinh</td>
+                <td>
+                    <select name="noisinh" id="">
+                        <option value="">Chọn nơi sinh</option>
+                        <option value="CT"> Cần Thơ</option>
+                        <option value="HCM" > Hồ Chí Minh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gtinhnam" value="Nam" id="">Nam
+                    <input type="radio" name="gtinhnu" value="Nu" id="">Nu
+                </td>
+            </tr>
+            <tr>
+                <td> Hình đại diện</td>
+                <td><input type="button" name="choose" value="fie" id=""> nochosse
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="dk" value="Đăng Kí" id="">
+                <input type="submit" name="dkl" value="Đăng Kí Lại" id="">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

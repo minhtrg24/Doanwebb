@@ -1,0 +1,390 @@
+/* --- CẤU HÌNH CHUNG --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: #cb1c22; /* Màu đỏ chủ đạo giống FPT Shop */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Cụm Icon bên phải (Đăng nhập + Giỏ hàng) */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.auth-link a:hover {
+    color: #ffcc00;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ffcc00;
+    color: black;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* --- HERO BANNER --- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url(../image/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.btn-shop {
+    background: #ffcc00;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-shop:hover { background: #e6b800; }
+
+/* --- DANH SÁCH SẢN PHẨM --- */
+.section-title {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.product-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-size: 0.95rem;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; Giới hạn 2 dòng tên sản phẩm */
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.price {
+    color: #cb1c22;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background:linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 25px; cursor: pointer; font-weight: bold;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.add-to-cart:hover { opacity: 0.85; }
+
+/* --- FOOTER --- */
+footer {
+    background: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* --- ĐÁP ỨNG TRÊN ĐIỆN THOẠI (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    /* Ẩn bớt menu chữ trên mobile cho gọn */
+    .nav-links {
+        display: none;
+    }
+    
+    /* Thu gọn banner */
+    .hero { height: 250px; }
+    .hero h1 { font-size: 1.4rem; }
+
+    /* Hiển thị 2 cột trên điện thoại */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .container { padding: 10px; }
+
+    /* Chỉ hiện icon đăng nhập trên mobile */
+    .auth-link span { display: none; }
+    .auth-link i { font-size: 1.3rem; }
+
+    .product-info h3 { font-size: 0.85rem; height: 35px; }
+    .price { font-size: 1.1rem; }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #cb1c22;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- Dropdown Menu (Sổ xuống) --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Nền trắng nguyên bản */
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    border-radius: 8px;
+    top: 100%;
+    overflow: hidden; /* Để bo góc các thẻ a bên trong */
+    border: 1px solid #eee;
+}
+
+/* --- Chữ trong menu con --- */
+.dropdown-content a {
+    color: #333333 !important; /* Đổi thành màu đen xám cho rõ nét */
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: left; /* Đảm bảo chữ canh lề trái */
+}
+
+/* --- Hiệu ứng khi di chuột vào từng mục con --- */
+.dropdown-content a:hover {
+    background-color: #f8f9fa; 
+    color: #cb1c22 !important;  
+    padding-left: 25px;       
+}
+/* Hiện menu khi hover vào mục Sản phẩm */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ==========================================
+   CHẾ ĐỘ ĐIỆN THOẠI (Responsive)
+   ========================================== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    /* Ẩn chữ Đăng nhập, chỉ để lại Icon */
+    .icon-text {
+        display: none;
+    }
+
+    .nav-icons {
+        gap: 15px;
+    }
+
+    .nav-icons i {
+        font-size: 1.2rem;
+    }
+
+    /* Giảm khoảng cách các link */
+    .nav-links {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Nếu màn hình quá nhỏ, có thể căn chỉnh lại Logo */
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+/* thanh tìm kiếm */
+        .search-container {
+    background-color: #f4f4f4; /* Màu nền nhẹ để tách biệt menu và banner */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 600px; /* Độ rộng tối đa của thanh tìm kiếm */
+    border: 2px solid #e74c3c; /* Màu đỏ tông xuyệt tông với logo Trường Tech */
+    border-radius: 25px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #c0392b;
+}
+#gt,
+#gt div {
+    outline: none;
+    border: none;
+}
+:target{
+    outline: none;
+    border: none;
+}

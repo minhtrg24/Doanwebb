@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop MSI Modern 14 F13MG-466VN V2 - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/msi.webp" alt="MSI">
+                </div>
+
+                <div class="product-info">
+                    <h1>Laptop MSI Modern 14 F13MG-466VN V2</h1>
+                    <div class="price-group">
+                        <span class="current-price">15.190.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item"><span class="spec-label">CPU</span><span>Intel Core i5 - 1334U (10 nhân, 12 luồng)</span></div>
+                        <div class="spec-item"><span class="spec-label">RAM</span><span>24GB DDR4 3200 MHz (8GB + 16GB)</span></div>
+                        <div class="spec-item"><span class="spec-label">SSD</span><span>512 GB SSD NVMe PCIe</span></div>
+                        <div class="spec-item"><span class="spec-label">VGA</span><span>Intel Iris Xe Graphics</span></div>
+                        <div class="spec-item"><span class="spec-label">Màn hình</span><span>14" FHD (1920 x 1080), Chống chói</span></div>
+                        <div class="spec-item"><span class="spec-label">Cổng kết nối</span><span>USB-C (PD/DP), HDMI, LAN RJ45</span></div>
+                        <div class="spec-item"><span class="spec-label">Pin</span><span>3-cell, 46.8 Wh</span></div>
+                    </div>
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-shield-alt" style="color: #cb1c22;"></i> Bảo hành chính hãng 2 năm
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) -->
+            <div class="product-description">
+                <h2>Đặc điểm nổi bật</h2>
+                <p>Laptop MSI Modern 14 F13MG - 466VN được trang bị vi xử lý Intel Core i5-1334U thế hệ Raptor Lake, đi kèm RAM 16GB và ổ cứng SSD 512GB tốc độ chuẩn PCIe. Màn hình 14 inch Full HD sử dụng tấm nền IPS chống chói cho khả năng hiển thị rõ nét. Máy kết nối đa dạng với USB 3.2, USB-C tích hợp Power Delivery và DisplayPort, cổng HDMI.</p>
+                <h3>Laptop MSI Modern 14 F13MG - 466VN: Hiệu năng mượt mà, màn hình sắc nét</h3>
+                <p>MSI Modern 14 F13MG - 466VN mang đến hiệu năng ổn định nhờ cấu hình mạnh mẽ, phù hợp cho công việc và học tập hằng ngày. Mẫu laptop MSI Modern 14 này còn ghi điểm với khả năng hiển thị sắc nét và hệ thống kết nối đa dạng, đáp ứng tốt nhu cầu sử dụng linh hoạt.</p>
+                <h3>Thiết kế hiện đại dễ sử dụng</h3>
+                <p> Laptop MSI Modern 14 F13MG - 466VN có thiết kế gọn gàng với độ dày chỉ 19.9mm và trọng lượng khoảng 1.5kg. Nhờ kích thước nhỏ gọn, người dùng có thể dễ dàng bỏ máy vào balo và mang theo khi di chuyển. Phần khung máy sử dụng chất liệu nhựa cao cấp, vừa tối ưu trọng lượng vừa đảm bảo độ bền trong quá trình sử dụng hàng ngày.</p>
+                
+                <p> Bề mặt máy được hoàn thiện theo phong cách tối giản với các đường nét thanh thoát, phù hợp với môi trường học tập và làm việc chuyên nghiệp. Logo MSI đặt ở trung tâm nắp lưng tạo điểm nhấn tinh tế mà không kém phần sang trọng. Bản lề mở rộng 180 độ hỗ trợ chia sẻ nội dung tiện lợi và linh hoạt hơn trong nhiều tình huống</p>
+
+                <p> Máy còn trang bị bàn phím đèn nền đơn sắc màu trắng, giúp thao tác chính xác trong điều kiện thiếu sáng. Webcam HD tích hợp sẵn, phục vụ tốt cho các nhu cầu học online và họp video. Thiết bị được cài đặt sẵn hệ điều hành Windows 11 Home SL tiện lợi, hỗ trợ đầy đủ tính năng làm việc hiện đại.</p>
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

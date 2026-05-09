@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn phím AULA S100 PRO TM - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/bpaula100.png" alt="Bàn phím AULA S100 PRO TM">
+                </div>
+
+                <div class="product-info">
+                    <h1>Bàn phím AULA S100 PRO TM</h1>
+                    <div class="price-group">
+                        <span class="current-price">790.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Loại bàn phím</span>
+                            <span>Full-size (99 phím)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tương thích</span>
+                            <span>WINXP/7/8/10/Android/IOS/MAC</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kết nối</span>
+                            <span>Có dây Type-C, Không dây 2.4G, Bluetooth</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Khoảng cách kết nối</span>
+                            <span>Lên đến 10m</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Đèn LED</span>
+                            <span>LED Rainbow</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Thời lượng pin</span>
+                            <span>32 giờ (mở LED) - 132 giờ (tắt LED)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hãng sản xuất</span>
+                            <span>Aula</span>
+                        </div>
+                    </div>    
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-check-circle"></i>  Bảo hành chính hãng toàn quốc. <br>
+                        <i class="fas fa-check-circle"></i> Hỗ trợ trả góp lãi suất 0%. <br>
+                        <i class="fas fa-check-circle"></i>  Hỗ trợ giao hàng toàn quốc <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                <h3>Đặc điểm nổi bật:</h3>
+                <p>Bàn phím cơ không dây Aula S100 Pro xanh dương trắng tím được thiết kế 99 phím với keycap PBT Double-Shot, kết hợp Red Switch cho độ bền ấn tượng. Mẫu bàn phím Aula này còn hỗ trợ kết nối 3 chế độ Bluetooth, Wireless 2.4G và cáp Type-C. Phụ kiện cũng tương thích được với các hệ điều hành Windows, Android, macOS và iOS.</p>
+                <br>
+                <h3>Keycap chất lượng, Red Switch gõ mượt</h3>
+                <p>Bàn phím cơ không dây Aula S100 Pro xanh dương trắng tím sử dụng keycap PBT Double-Shot bền bỉ. Chất liệu này có độ cứng cao, khả năng chống mài mòn tốt và giảm thiểu bị biến dạng khi tiếp xúc lâu với nhiệt độ tay. </p>
+                <br>
+                <p>Thêm vào đó, Red Switch được tích hợp sở hữu hành trình phím ngắn và lực nhấn nhẹ. Đây là loại switch lý tưởng khi gõ nhanh và liên tục, đặc biệt là game thủ hoặc người thường xuyên nhập liệu tốc độ cao. Độ ồn của loại Switch này cũng khá thấp phù hợp thao tác trong môi trường văn phòng hoặc không gian chung</p>
+            </div>
+        </div>
+    </div>
+<script src="giohangchotrang.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Gaming LENOVO LOQ- Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/lenovo.jpg" alt="Laptop Gaming LENOVO LOQ">
+                </div>
+
+                <div class="product-info">
+                    <h1>Laptop Gaming LENOVO LOQ</h1>
+                    <div class="price-group">
+                        <span class="current-price">26.990.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">CPU</span>
+                            <span>AMD Ryzen 7 7735HS (8 nhân, 16 luồng)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">RAM</span>
+                            <span>16GB DDR5-4800 </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">SSD</span>
+                            <span>512GB PCIe 4.0x4 NVMe </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">VGA</span>
+                            <span>NVIDIA GeForce RTX 3050 6GB GDDR6 </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Màn hình</span>
+                            <span>15.6" FHD, 300nits, 100% sRGB, FreeSync</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Pin / Sạc</span>
+                            <span>57.5Wh / 135W Slim Tip</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kết nối</span>
+                            <span>USB-C , HDMI 2.1 , LAN RJ-45</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hệ điều hành</span>
+                            <span>Windows 11 Home SL, English</span>
+                        </div>
+                    </div>
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-shield-alt" style="color: #cb1c22;"></i> Bảo hành chính hãng 2 năm
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) -->
+            <div class="product-description">
+                <h2>Đặc điểm nổi bật</h2>
+                <p>Laptop Lenovo LOQ 15ARP10E 83S0007AVN sử dụng CPU AMD Ryzen 7 7735HS, cung cấp đạt hiệu suất ổn định khi xử lý các tác vụ nặng và đáp ứng nhu cầu làm việc. Model sở hữu GPU RTX 3050 6GB GDDR6 hỗ trợ dựng hình ổn định. Máy dùng RAM DDR5-4800 giúp người dùng đa nhiệm tốt trong nhiều bối cảnh.</p>
+                <h3>Hiệu năng mạnh mẽ cho gaming và đồ họa</h3>
+                <p>Laptop Lenovo LOQ 15ARP10E 83S0007AVN sử dụng CPU AMD Ryzen 7 7735HS với 8 nhân và 16 luồng tạo nền tảng xử lý mạnh cho các tác vụ đồ họa. Model laptop Lenovo LOQ này được hưởng lợi từ xung tối đa 4.75GHz giúp tăng tốc quá trình render hoặc chạy ứng dụng 3D. </p>
+                <p>Thiết bị cũng tích hợp GPU RTX 3050 6GB GDDR6 với TGP 65W phù hợp nhu cầu dựng video và chơi game phổ biến. Bên cạnh đó, bộ nhớ đệm 4MB L2 và 16MB L3 của CPU còn giúp quá trình phản hồi lệnh ổn định hơn. </p>
+                <p>Ngoài ra, khả năng tăng tốc nhờ Boost Clock 990MHz của máy cũng giúp GPU duy trì khung hình mượt trong nhiều tình huống. Những yếu tố này tạo cho sản phẩm nền tảng hiệu năng phù hợp người sáng tạo nội dung hoặc game thủ phổ thông.</p>
+                <h3>Màn hình sắc nét và tần số quét cao</h3>
+                <p>Laptop Lenovo LOQ 15ARP10E 83S0007AVN sở hữu màn hình 15.6 inch FHD với tấm nền IPS giúp hình ảnh hiển thị rõ và giữ màu ổn định khi thay đổi góc nhìn. Thiết bị đạt độ sáng 300 nits nên người dùng có thể theo dõi nội dung trong môi trường học tập lẫn làm việc có ánh đèn mạnh. </p>
+                <p>Bên cạnh đó, độ phủ màu 100% sRGB giúp model tái tạo màu chuẩn hơn cho chỉnh sửa ảnh và thiết kế nội dung. Màn hình còn hỗ trợ tần số quét 144Hz giúp khung hình mượt mà hơn khi chơi game tốc độ cao. </p>
+                <p>Ngoài ra, công nghệ FreeSync trên máy cũng hỗ trợ đồng bộ hình ảnh để hạn chế tình trạng giật khung hoặc xé hình khi thao tác. Nhờ sự kết hợp giữa các yếu tố này, thiết bị mang đến trải nghiệm hình ảnh hài hòa cho cả giải trí lẫn công việc đòi hỏi độ chính xác.</p>
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

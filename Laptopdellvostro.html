@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Dell Vostro - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/dell.webp" alt="Laptop Dell Vostro">
+                </div>
+
+                <div class="product-info">
+                    <h1>Laptop Dell Vostro</h1>
+                    <div class="price-group">
+                        <span class="current-price">19.990.000₫</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">CPU</span>
+                            <span>Intel Core i7-1355U (10 nhân, 12 luồng)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">RAM</span>
+                            <span>16GB DDR4 2666 MHz (2x 8GB)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">SSD</span>
+                            <span>512GB SSD </span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">VGA</span>
+                            <span>Intel Iris Xe Graphics</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Màn hình</span>
+                            <span>15.6" FHD, Góc nhìn rộng, Chống chói</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kết nối</span>
+                            <span>Type-C, HDMI 1.4, USB 3.2, Cổng LAN</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Pin</span>
+                            <span>3-cell, 41Wh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hệ điều hành</span>
+                            <span>Free OS</span>
+                        </div>
+                    </div>
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-shield-alt" style="color: #cb1c22;"></i> Bảo hành chính hãng 2 năm
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) -->
+            <div class="product-description">
+                <h2>Đặc điểm nổi bật</h2>
+                <p>Laptop Dell Vostro 3530 2H1TPI7 sở hữu cấu hình mạnh mẽ với Intel Core i7 thế hệ 13 cùng RAM 16GB DDR4, mang lại hiệu năng ấn tượng và khả năng đa nhiệm tốt. Máy được trang bị màn hình 15.6 inch Full HD LCD với tần số quét 120Hz, cho hình ảnh sắc nét và chuyển động mượt mà. Bên cạnh đó, lớp chống chói cũng giúp thế hệ laptop Dell Vostro này có thể làm việc dễ dàng trong mọi điều kiện ánh sáng. Máy có thiết kế vỏ carbon bền bỉ, trọng lượng nhẹ 1.66 kg và đầy đủ các cổng kết nối.</p>
+                <h3>Sẵn sàng cho mọi tác vụ và lưu trữ mọi tài liệu</h3>
+                <p>Dell Vostro 3530 được trang bị 16GB RAM DDR4 chia thành 2 thanh 8GB, tạo nên khả năng xử lý nhanh chóng và mạnh mẽ cho các tác vụ hàng ngày lẫn công việc đa nhiệm nặng. Với RAM DDR4 2666MHz, mang lại trải nghiệm mượt mà và ổn định khi làm việc với các ứng dụng văn phòng, phần mềm đồ họa nhẹ hoặc khi mở nhiều cửa sổ trình duyệt cùng lúc.</p>
+                <p>Về lưu trữ, Dell Vostro 3530 sử dụng ổ cứng SSD 512GB, mang lại tốc độ đọc ghi nhanh chóng. Đặc biệt, máy Dell i7 còn hỗ trợ nâng cấp ổ SSD lên đến 1TB, mở rộng khả năng lưu trữ cho người dùng, đảm bảo rằng mọi dữ liệu quan trọng, từ tài liệu công việc đến các dự án lớn.</p>
+                <h3>Thiết kế đậm chất doanh nhân và độ hoàn thiện cao</h3>
+                <p>Laptop Dell Vostro 3530 2H1TPI7 mang đến một thiết kế tinh tế và chuyên nghiệp, đậm chất hiện đại với vẻ ngoài màu đen mạnh mẽ. Phần vỏ máy được làm từ chất liệu carbon cao cấp, mang lại cảm giác cứng cáp nhưng vẫn giữ trọng lượng nhẹ nhàng chỉ khoảng 1.66 kg. </p>
+                <p>Với độ dày chỉ 16,96mm, Dell Vostro 3530 2H1TPI7 có thể dễ dàng vừa vặn trong mọi loại balo hoặc túi xách. Bên cạnh đó, sự bền bỉ và mượt mà của bề mặt vỏ máy làm nổi bật phong cách tối giản. Đồng thời, máy còn chú trọng đến tính thân thiện và dễ dàng sử dụng thông qua thiết kế cổng kết nối thông minh, phân bổ đều ở hai cạnh máy.</p>
+            </div>
+        </div>
+    </div>
+    <script src="giohangchotrang.js"></script>
+</body>
+</html>

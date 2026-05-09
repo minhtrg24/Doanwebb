@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuột Gaming ASUS ROG Keris Aimpoint - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/chuotasusrog.webp" alt="Chuột Gaming ASUS ROG Keris Aimpoint">
+                </div>
+
+                <div class="product-info">
+                    <h1>Chuột Gaming ASUS ROG Keris Aimpoint</h1>
+                    <div class="price-group">
+                        <span class="current-price">2.690.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                            <div class="spec-item">
+                                <span class="spec-label">Hãng sản xuất</span>
+                                <span class="spec-value highlight">ASUS ROG</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Độ phân giải</span>
+                                <span class="spec-value">36.000 DPI (ROG AimPoint)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Kết nối</span>
+                                <span class="spec-value">Tri-mode (BT, 2.4GHz, Wire)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Thời gian dùng</span>
+                                <span class="spec-value">119h (RF) / 150h (BT)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Đèn LED</span>
+                                <span class="spec-value">Aura Sync RGB</span>
+                            </div>
+                    </div>    
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-check-circle"></i>  Bảo hành chính hãng toàn quốc. <br>
+                        <i class="fas fa-check-circle"></i> Hỗ trợ trả góp lãi suất 0%. <br>
+                        <i class="fas fa-check-circle"></i>  Hỗ trợ giao hàng toàn quốc <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                    <h3>Đặc điểm nổi bật</h3>
+                    <br>
+                    <h3>Chuột Gaming ASUS ROG Keris AimPoint – Hiệu năng cao cấp cho game thủ</h3>
+                    <p>ASUS ROG Keris AimPoint là mẫu chuột gaming cao cấp với thiết kế siêu nhẹ, cảm biến quang học hiện đại cùng khả năng kết nối linh hoạt. Sản phẩm mang đến trải nghiệm chơi game chính xác, mượt mà và phù hợp với nhiều nhu cầu sử dụng khác nhau.</p>
+
+                    <br>
+
+                    <h3>Thiết kế công thái học, siêu nhẹ</h3>
+                    <p>Chuột ASUS ROG Keris AimPoint được hoàn thiện từ chất liệu cao cấp với kiểu dáng công thái học hiện đại, giúp người dùng cầm nắm thoải mái trong thời gian dài. Thiết kế siêu nhẹ hỗ trợ thao tác nhanh và linh hoạt hơn trong các tựa game yêu cầu tốc độ cao.</p>
+
+                    <br>
+
+                    <h3>Ba chế độ kết nối tiện lợi</h3>
+                    <p>Sản phẩm hỗ trợ ba chế độ kết nối gồm USB có dây, Bluetooth và Wireless 2.4GHz RF, cho phép người dùng dễ dàng sử dụng trên nhiều thiết bị khác nhau. Đặc biệt, chế độ Bluetooth có thể kết nối đồng thời với nhiều thiết bị, mang đến sự tiện lợi trong quá trình làm việc và giải trí.</p>
+
+                    <br>
+
+                    <h3>Cảm biến ROG AimPoint với độ nhạy lên đến 36.000 DPI</h3>
+                    <p>ASUS ROG Keris AimPoint được trang bị cảm biến quang học ROG AimPoint có độ nhạy lên đến 36.000 DPI, cho khả năng theo dõi chuyển động cực kỳ chính xác. Cảm biến hỗ trợ tốc độ tracking cao, giúp ghi nhận thao tác nhanh chóng và ổn định ngay cả trong những trận đấu căng thẳng.</p>
+
+                    <br>
+
+                    <p>Nhờ độ trễ thấp cùng hiệu năng mạnh mẽ, chuột đáp ứng tốt nhu cầu chơi game chuyên nghiệp cũng như các tác vụ sử dụng hằng ngày.</p>
+
+            </div>
+        </div>
+    </div>
+<script src="giohangchotrang.js"></script>
+</body>
+</html>

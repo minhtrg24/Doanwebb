@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Tech - Đồ Công Nghệ Chính Hãng</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <!-- Thư viện icon FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Thanh điều hướng -->
+    <header>
+        <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a>
+        </div>
+
+        <!-- Menu chính -->
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html#gt"> Giới thiệu</a></li>
+            
+            <!-- Menu sổ xuống (Dropdown) -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="laptop.html">Laptop</a>
+                    <a href="banphim.html">Bàn phím</a>
+                    <a href="chuot.html">Chuột</a>
+                    <a href="tainghe.html">Tai nghe</a>
+                    <a href="labthuchanh.html">Lab thực hành</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Icon Tiện ích -->
+        <div class="nav-icons">
+            <a href="dangnhap.html" class="icon-link" title="Đăng nhập" style="color: white;text-decoration: none;">
+                <i class="fas fa-user"></i>
+                <span class="icon-text">Đăng nhập</span>
+            </a>
+            <a href="giohang.html" class="icon-link cart-icon" title="Giỏ hàng" style="color: white">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+            </a>
+        </div>
+    </nav>
+    </header>
+
+     <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+    <!-- Banner Quảng Cáo -->
+    <section class="hero">
+       
+    </section>
+
+    <!-- Nội dung chính -->
+    <main class="container">
+        <h2 class="section-title">Sản phẩm mới nhất</h2>
+        
+        <div class="product-grid">
+
+    <!-- Sản phẩm 1 -->
+    <div class="product-card">
+        <a href="Laptopasusvivobook.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="product-img">
+                <img src="./image/asusvivobook.png" alt="Laptop ASUS">
+            </div>
+
+            <div class="product-info">
+                <h3>Laptop ASUS Vivobook 15 X1504VA-BQ165W</h3>
+                <p class="price">18.490.000₫</p>
+            </div>
+        </a>
+
+        <button class="add-to-cart" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Sản phẩm 2 -->
+    <div class="product-card">
+        <a href="bpakko3087.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="product-img">
+                <img src="./image/banphimanko.webp" alt="Bàn phím Akko">
+            </div>
+
+            <div class="product-info">
+                <h3>Bàn phím cơ AKKO 3087 v2 DS Horizon</h3>
+                <p class="price">1.990.000₫</p>
+            </div>
+        </a>
+
+        <button class="add-to-cart" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Sản phẩm 3 -->
+    <div class="product-card">
+        <a href="chuotlogitrang.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="product-img">
+                <img src="./image/chuotlogitech.webp" alt="Chuột Logitech">
+            </div>
+
+            <div class="product-info">
+                <h3>Chuột Gaming Logitech G304 LightSpeed Wireless</h3>
+                <p class="price">725.000₫</p>
+            </div>
+        </a>
+
+        <button class="add-to-cart" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Sản phẩm 4 -->
+    <div class="product-card">
+        <a href="tainghehavit.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="product-img">
+                <img src="./image/tainghe.webp" alt="Tai nghe Havit">
+            </div>
+
+            <div class="product-info">
+                <h3>Tai nghe Havit H2002D High Definition Gaming</h3>
+                <p class="price">950.000₫</p>
+            </div>
+        </a>
+
+        <button class="add-to-cart" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Sản phẩm 5 -->
+    <div class="product-card">
+        <a href="Laptopasustuf.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="product-img">
+                <img src="./image/TUF.webp" alt="TUF">
+            </div>
+
+            <div class="product-info">
+                <h3>Laptop Asus TUF Gaming</h3>
+                <p class="price">17.490.000đ</p>
+            </div>
+        </a>
+
+        <button class="add-to-cart" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <!-- Sản phẩm 6 -->
+    <div class="product-card">
+        <a href="tainghexiaomi.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="product-img">
+                <img src="./image/tainghexiaomi.webp" alt="Xiaomi">
+            </div>
+
+            <div class="product-info">
+                <h3>Tai nghe Bluetooth Xiaomi Redmi Buds 8 Active</h3>
+                <p class="price">700.000đ</p>
+            </div>
+        </a>
+
+        <button class="add-to-cart" onclick="addToCart(this)">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+</div>
+        <br>
+        <a href="" id="gt" style="color: black; text-decoration: none;">
+            <h3>Giới Thiệu </h3>
+            <br>
+            <div><strong>TRƯỜNG TECH</strong> là hệ thống chuyên bán lẻ các sản phẩm công nghệ hiện đại bao gồm laptop, điện thoại, phụ kiện công nghệ và các thiết bị điện tử chính hãng đến từ nhiều thương hiệu uy tín. Với mẫu mã đa dạng, chất lượng đảm bảo cùng mức giá hợp lý, Trường Tech luôn hướng đến việc mang lại cho khách hàng trải nghiệm mua sắm tiện lợi, nhanh chóng và đáng tin cậy.</div>
+            <br>
+            <div>Không chỉ tập trung vào chất lượng sản phẩm, Trường Tech còn chú trọng nâng cao dịch vụ chăm sóc khách hàng với giao diện website thân thiện, dễ sử dụng, hỗ trợ tìm kiếm sản phẩm nhanh và nhiều chương trình ưu đãi hấp dẫn. Bên cạnh đó, hệ thống luôn cập nhật các xu hướng công nghệ mới nhằm đáp ứng nhu cầu học tập, làm việc và giải trí của người dùng hiện đại.</div>
+            <br>
+            <h3>Định hướng phát triển</h3>
+            <div>Với mục tiêu “Mang công nghệ chất lượng đến gần mọi khách hàng”, Trường Tech không ngừng cải thiện hệ thống bán hàng trực tuyến, tối ưu trải nghiệm người dùng và mở rộng danh mục sản phẩm công nghệ. Website hướng đến việc ứng dụng các giải pháp hiện đại vào quản lý và chăm sóc khách hàng nhằm phục vụ nhanh chóng, hiệu quả và chuyên nghiệp hơn.</div>
+            <br>
+            <div>Trong tương lai, Trường Tech tiếp tục xây dựng hình ảnh trở thành một trong những website bán lẻ công nghệ uy tín, hiện đại và được nhiều khách hàng tin tưởng lựa chọn.</div>
+        </a>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        
+         <div class="hero-content">
+            <p>Nâng Tầm Trải Nghiệm Công Nghệ</p>
+            <p>Sản phẩm chính hãng - Bảo hành tận tâm tại Trường Tech</p>
+            <p>Liên hệ : 19002019</p>
+            <p>Email: minhtrg24@gmail.com</p>
+            <p>Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, Tp HCM</p>
+        </div>
+       
+    </footer>
+<script src="giohang.js"></script>
+<script src="timkiem.js"></script>
+</body>
+</html>

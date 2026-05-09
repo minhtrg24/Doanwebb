@@ -1,0 +1,70 @@
+/* .menungang {
+    display: flex;
+    border-radius: 50px 0px 0px 50px;
+}
+.menungang li{
+    list-style-type: none;
+    padding: 10px ;
+}
+.menungang li a{
+    display: block;
+    background-color: pink;
+}
+.menungang li a:hover{
+    color:red;
+    background-color:blue;
+} */
+ .menungang {
+  
+    background-color: pink;
+    list-style-type: none;
+    min-height: 30px;
+    display: flex;
+    
+}
+
+.menungang li {
+    line-height: 30px;
+    margin-left: 30px;
+   
+    font-style: italic;
+    font-weight: bold;
+   
+}
+
+.menungang li a {
+     border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+.menungang li a:hover {
+    color: blue;
+    background-color: yellow;
+}
+.menudoc{
+    list-style-type: none;
+    padding: 0;
+    width: 250px;
+    background-color: blue;
+
+}
+.menudoc li{
+   
+    border-bottom: solid    ;
+    height: 40px;
+    
+}
+.menudoc li a{
+    text-decoration:  none;
+   
+    
+}
+.menudoc li:hover{
+    background-color: aqua;
+}
+.menudoc li a:hover{
+    background-color: pink;
+    color :red;
+    
+}

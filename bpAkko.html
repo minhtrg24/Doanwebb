@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn phím cơ AKKO - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/bpakko.png" alt="Bàn phím cơ AKKO">
+                </div>
+
+                <div class="product-info">
+                    <h1>Bàn phím cơ AKKO</h1>
+                    <div class="price-group">
+                        <span class="current-price">3.290.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Thương hiệu</span>
+                            <span>AKKO</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Bảo hành</span>
+                            <span>12 tháng</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Dòng sản phẩm</span>
+                            <span>MOD Series</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Loại bàn phím</span>
+                            <span>Bàn phím cơ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Mục đích sử dụng</span>
+                            <span>Gaming, Văn phòng</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kích thước/Layout</span>
+                            <span>75% (82 phím)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Phương thức kết nối</span>
+                            <span>Wireless 2.4GHz, Bluetooth, USB-C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kiểu Switch</span>
+                            <span>Quang học và Từ tính</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Chất liệu Keycap</span>
+                            <span>Dye-sub PBT</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Chất liệu vỏ</span>
+                            <span>Nhựa</span>
+                        </div>
+                    </div>    
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-check-circle"></i>  Bảo hành chính hãng toàn quốc. <br>
+                        <i class="fas fa-check-circle"></i> Hỗ trợ trả góp lãi suất 0%. <br>
+                        <i class="fas fa-check-circle"></i>  Hỗ trợ giao hàng toàn quốc <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                    <h3>AKKO MOD 007B HE PC Joy of Life một phiên bản bàn phím máy tính giới hạn được lấy cảm hứng từ bộ phim cổ trang “Joy of Life”</h3>
+                    <p>Layout 75%, mạch xuôi có núm âm lượng</p>
+                    <br>
+                    <p>Magnetic Switch (hỗ trợ Rapid Trigger) : 0.1mm~2.5mm (Hoạt động trên nguyên lý công tắc đóng mở từ trường tăng độ nhạy và độ chính xác).</p>
+                    <p>Có khả năng điều chỉnh khoảng cách điểm tiếp xúc rất hữu ích cho các tựa game cần độ chính xác và phản hồi động tác nhanh.</p>
+                    <br>
+                    <h3>Lưu ý:</h3>
+                    <br>
+                    <p>Cảm biến Hall rất dễ bị ảnh hưởng bởi nhiệt độ và độ ẩm .Dẫn đến hư hại hệ thống từ trường của bàn phím. Tránh để sản phẩm tiếp xúc với môi trường có từ trường cao và nhiệt độ khắc nghiệt.
+Để tối ưu tính năng và trải nghiệm sử dụng bàn phím. Khuyến khích nâng cấp firmware mới nhất cho lần sử dụng đầu tiên.</p>
+                        
+            </div>
+        </div>
+    </div>
+<script src="giohangchotrang.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn phím Logitech - Trường Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/trang.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TRƯỜNG <span>TECH</span></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gt"> Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#">Sản phẩm <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="laptop.html">Laptop</a>
+                        <a href="banphim.html">Bàn phím</a>
+                        <a href="chuot.html">Chuột</a>
+                        <a href="tainghe.html">Tai nghe</a>
+                        <a href="labthuchanh.html">Lab thực hành</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <a href="dangnhap.html" style="color: white;"><i class="fas fa-user"></i></a>
+            <a href="giohang.html" class="cart-icon" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="query" placeholder="Bạn muốn tìm sản phẩm nào?..." class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <!-- PHẦN 1: ẢNH VÀ THÔNG SỐ (CHIA CỘT) -->
+            <div class="product-top">
+                <div class="product-image">
+                    <img src="./image/bplogitech.jpg" alt="Bàn phím Logitech">
+                </div>
+
+                <div class="product-info">
+                    <h1>Bàn phím Logitech</h1>
+                    <div class="price-group">
+                        <span class="current-price">790.000đ</span>
+                      
+                    </div>
+
+                    <div class="specs-list">
+                       <div class="spec-item">
+                            <span class="spec-label">Loại bàn phím</span>
+                            <span>Mini-size (79 phím)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tương thích</span>
+                            <span>Windows, macOS, iPadOS, iOS, Android, ChromeOS, Linux</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Kết nối</span>
+                            <span>Bluetooth, Tương thích đầu thu Logi Bolt</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Khoảng cách kết nối</span>
+                            <span>10 mét</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Đèn báo/LED</span>
+                            <span>LED báo pin, 3 kênh Easy-Switch Bluetooth</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Thời gian dùng</span>
+                            <span>Tuổi thọ pin lên đến 36 tháng</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hãng sản xuất</span>
+                            <span>Logitech</span>
+                        </div>
+                    </div>    
+
+                    <div class="action-btns">
+                        <button class="btn btn-buy">MUA NGAY</button>
+                        <button class="btn btn-cart" onclick="addToCart(this)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+
+                    <div style="margin-top: 20px; color: #27ae60; font-size: 14px; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Miễn phí giao hàng toàn quốc <br>
+                        <i class="fas fa-check-circle"></i>  Bảo hành chính hãng toàn quốc. <br>
+                        <i class="fas fa-check-circle"></i> Hỗ trợ trả góp lãi suất 0%. <br>
+                        <i class="fas fa-check-circle"></i>  Hỗ trợ giao hàng toàn quốc <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 2: MÔ TẢ (TRÀN NGANG) --> 
+            <div class="product-description">
+                
+                    <h3>Đặc điểm nổi bật</h3>
+                  <p>Bàn phím Bluetooth Logitech Pebble Key 2 K380S sẽ là một sự lựa chọn hoàn hảo dành cho những ai yêu thích các mẫu bàn phím Logitech nhỏ gọn, đơn giản nhưng vẫn bắt mắt. Ngoài thiết kế, Pebble K380S còn sở hữu nhiều tính năng cùng thời lượng pin đến 36 tháng cực chất.</p>
+                  <br>
+                  <h3>K380S tăng thời lượng pin đến 36 tháng</h3>
+                  <p>Bàn phím Bluetooth Logitech K380S còn được trang bị thời lượng pin lên tới 36 tháng vì vậy bạn có thể yên tâm sử dụng bàn phím liên tục trong cường độ cao.</p>
+                  <br>
+                  <p>Bên cạnh đó, một điểm khá thú vị trên mẫu bàn phím này của K380S Logitech đó là các phím tắt tích hợp giúp bạn dễ dàng truy cập vào các tính năng như chụp màn hình, tìm kiếm, mở emoji,…giúp bạn thực hiện mọi thao tác một cách thông minh và tối ưu hơn.</p>
+                        
+            </div>
+        </div>
+    </div>
+<script src="giohangchotrang.js"></script>
+</body>
+</html>
